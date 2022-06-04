@@ -7,6 +7,10 @@
   --bg-gray: #e5e5e5;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,10 +26,7 @@ p {
   margin: 0;
 }
 
-.bg-components {
-  background-color: var(--bg-white);
-}
-
-.base-container {
-  max-width: 300px;
+.base-card {
+  background-color: #ffffff;
+  border-radius: 5px;
 }
