@@ -1,6 +1,7 @@
 import './App.css';
-import Header from "./components/header";
-import FilterCard from "./components/filter-card";
+import Header from './components/header';
+import FilterCard from './components/filter-card';
+import SalesCard from './components/sales-card';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <div className="container">
         <FilterCard />
+        <SalesCard labels={['Feminino', 'Masculino', 'Outro']} series={[40, 40, 20]} />
       </div>
     </div>
   );
