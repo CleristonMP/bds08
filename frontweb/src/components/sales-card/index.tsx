@@ -1,4 +1,5 @@
 import ReactApexChart from 'react-apexcharts';
+import { donutChartConfig } from './chart-options';
 import './styles.css';
 
 type Props = {
@@ -15,20 +16,7 @@ function SalesCard({ labels, series }: Props) {
       </div>
       <div className="sales-by-gender">
         <ReactApexChart
-          options={{
-            labels,
-            colors: ['#FF7A00', '#7234F5', '#FF0000'],
-            legend: {
-              position: 'bottom',
-              fontFamily: 'Ubuntu, sans-serif',
-              itemMargin: {
-                vertical: 7
-              }
-            },
-            chart: {
-              type: 'donut'
-            }
-          }}
+          options={donutChartConfig(labels)}
           type="donut"
           width="100%"
           height={335}

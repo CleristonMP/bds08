@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.apexcharts-legend-text {
+  letter-spacing: -0.015em;
+}
+
 @media (min-width: 992px) {
   .sales-card-component {
     display: flex;
