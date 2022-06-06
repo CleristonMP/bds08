@@ -29,7 +29,7 @@ function SalesCard({ labels, series, storeId = 0 }: Props) {
   return (
     <div className="sales-card-component base-card">
       <div className="sales-summary">
-        <h2>{summary && formatPrice(summary?.sum)}</h2>
+        <h2>{summary ? formatPrice(summary?.sum) : formatPrice(0)}</h2>
         <span>Total de vendas</span>
       </div>
       <div className="sales-by-gender">
