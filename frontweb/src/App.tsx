@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <FilterCard />
+        <FilterCard onFilterChange={() => undefined} />
         <SalesCard labels={['Feminino', 'Masculino', 'Outro']} series={[40, 40, 20]} />
       </div>
     </div>

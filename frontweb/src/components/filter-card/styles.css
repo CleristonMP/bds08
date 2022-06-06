@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 }
 
-.filter-card-component select {
+.store-filter-select__control {
   width: 100%;
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
@@ -11,6 +11,19 @@
   color: var(--secondary-color);
   padding: 15px 12px;
   letter-spacing: -0.015em;
+  align-content: center;
+}
+
+.store-filter-select__indicator-separator {
+  display: none;
+}
+
+.store-filter-select__option,
+.store-filter-select__single-value {
+  color: var(--secondary-color) !important;
+}
+
+.store-filter-select__option--is-focused {
 }
 
 @media (min-width: 576px) {
@@ -19,7 +32,7 @@
     margin-bottom: 40px;
   }
 
-  .filter-card-component select {
+  .store-filter-select__control {
     width: 270px;
   }
 }
