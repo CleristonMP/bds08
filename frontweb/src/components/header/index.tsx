@@ -7,7 +7,7 @@ function Header() {
         <h1 className="header-title">BDS vendas</h1>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;

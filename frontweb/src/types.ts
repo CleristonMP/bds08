@@ -13,3 +13,7 @@ export type SalesByGenderData = {
   gender: Gender;
   sum: number;
 };
+
+export type FilterData = {
+  store: Store;
+};
