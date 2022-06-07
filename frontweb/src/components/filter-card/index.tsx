@@ -21,6 +21,13 @@ function FilterCard({ onFilterChange }: Props) {
   }, []);
 
   const handleChangeStore = (value: Store) => {
+    if (!value) {
+      value = {
+        id: 0,
+        name: 'Lojas'
+      };
+    }
+
     setValue('store', value);
     const selectedStore = { store: getValues('store') };
     onFilterChange(selectedStore);
