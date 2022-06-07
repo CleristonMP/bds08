@@ -45,10 +45,18 @@ export const donutChartConfig = (labels: string[] = []) => {
             show: true,
             value: {
               show: true,
-              fontSize: '48px',
+              fontSize: 'small',
               fontFamily: 'Ubuntu, sans-serif',
               fontWeight: 700,
-              color: '#334ac3'
+              color: '#334ac3',
+              formatter: function (val) {
+                const newVal = parseFloat(val);
+                return new Intl.NumberFormat('pt-BR', {
+                  minimumFractionDigits: 2,
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(newVal);
+              }
             }
           }
         }
